@@ -8,8 +8,16 @@ public class Operation extends javax.swing.JFrame {
         initComponents();
         this.setTitle("Phep toan");
     }
+    
+    // tin chuc nang tru
+    public double Tru(String s1, String s2) {
+        double result = Double.parseDouble(s1) - Double.parseDouble(s2);
+        return result;
+    }
 
     @SuppressWarnings("unchecked")
+    
+    
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -151,7 +159,7 @@ public class Operation extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
+    
     private void ComputeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComputeButtonActionPerformed
 
     }//GEN-LAST:event_ComputeButtonActionPerformed
