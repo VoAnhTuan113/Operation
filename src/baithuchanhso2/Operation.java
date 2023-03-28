@@ -8,6 +8,16 @@ public class Operation extends javax.swing.JFrame {
         initComponents();
         this.setTitle("Phep toan");
     }
+    
+    public double Nhan(String s1, String s2) {
+        double result = Double.parseDouble(s1) * Double.parseDouble(s2);
+        return result;
+    }
+
+    public double Chia(String s1, String s2) {
+        double result = Double.parseDouble(s1) / Double.parseDouble(s2);
+        return result;
+    }
 
     public double Cong(String s1, String s2) {
         double result = Double.parseDouble(s1) + Double.parseDouble(s2);
@@ -16,7 +26,10 @@ public class Operation extends javax.swing.JFrame {
 
     @SuppressWarnings("unchecked")
     
-    
+     public double Tru(String s1, String s2) {
+        double result = Double.parseDouble(s1) - Double.parseDouble(s2);
+        return result;
+    }
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
