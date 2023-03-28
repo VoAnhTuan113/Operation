@@ -9,7 +9,7 @@ public class Operation extends javax.swing.JFrame {
         this.setTitle("Phep toan");
     }
     
-    // tin chuc nang tru
+    // tin chuc nang tru -
     public double Tru(String s1, String s2) {
         double result = Double.parseDouble(s1) - Double.parseDouble(s2);
         return result;
