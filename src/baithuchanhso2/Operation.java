@@ -8,6 +8,12 @@ public class Operation extends javax.swing.JFrame {
         initComponents();
         this.setTitle("Phep toan");
     }
+    public double Cong(String s1, String s2) {
+        double result = Double.parseDouble(s1) + Double.parseDouble(s2);
+        return result;
+    }
+
+
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
