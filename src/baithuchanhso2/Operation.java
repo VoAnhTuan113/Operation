@@ -30,6 +30,8 @@ public class Operation extends javax.swing.JFrame {
         double result = Double.parseDouble(s1) - Double.parseDouble(s2);
         return result;
     }
+     
+     
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -174,6 +176,27 @@ public class Operation extends javax.swing.JFrame {
     
     private void ComputeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComputeButtonActionPerformed
 
+      String str1 = firstText.getText();
+        String str2 = secondText.getText();
+        try {
+            String selectOperator = (String) operatorComboBox.getSelectedItem();
+            switch (selectOperator) {
+                case "+":
+                    resultText.setText(String.valueOf(Cong(str1, str2)));
+                    break;
+                case "-":
+                    resultText.setText(String.valueOf(Tru(str1, str2)));
+                    break;
+                case "*":
+                    resultText.setText(String.valueOf(Nhan(str1, str2)));
+                    break;
+                case "/":
+                    resultText.setText(String.valueOf(Chia(str1, str2)));
+                    break;
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(resultText, "Invavid Input");
+        }
     }//GEN-LAST:event_ComputeButtonActionPerformed
 
     private void ContinueButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContinueButtonActionPerformed
